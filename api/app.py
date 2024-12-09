@@ -16,7 +16,8 @@ from dotenv import load_dotenv
 import base64
 from typing import List, Optional,Type, Tuple
 from fastapi import FastAPI
-
+from maccaw.maccaw import BaseTool, OpenaiLLM
+from maccaw.main import MaccawAgent
 from fastapi.responses import RedirectResponse, Response
 from io import BytesIO
 from pydantic import BaseModel
