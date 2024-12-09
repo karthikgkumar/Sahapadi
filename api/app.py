@@ -11,10 +11,7 @@ from reportlab.lib.colors import HexColor
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER, TA_LEFT
-from avachain import BaseTool, OpenaiLLM
-from avachain.avachain_executor import AvaAgent
 import openai
-from pptx import Presentation
 from dotenv import load_dotenv
 import base64
 from typing import List, Optional,Type, Tuple
@@ -28,10 +25,6 @@ import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 import os
-from pptx.util import Inches, Pt
-from pptx.enum.text import PP_ALIGN
-from pptx.dml.color import RGBColor
-from pptx import Presentation
 load_dotenv()  # This loads the variables from .env
 from fastapi.responses import StreamingResponse
 from mangum import Mangum
