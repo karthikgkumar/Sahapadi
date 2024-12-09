@@ -27,13 +27,11 @@ from fastapi import FastAPI, HTTPException
 import os
 load_dotenv()  # This loads the variables from .env
 from fastapi.responses import StreamingResponse
-from mangum import Mangum
 from io import BytesIO
 load_dotenv() 
 
 
 app=FastAPI()
-handler=Mangum(app)
 
 
 class PresentationRequest(BaseModel):
