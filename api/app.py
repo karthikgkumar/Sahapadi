@@ -10,7 +10,10 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_JUSTIFY, TA_CENTER, TA_LEFT
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 class VisualAidArgs(BaseModel):
     content: str = Field(description="The content to be transformed into a visual aid")
     title: str = Field(description="Title of the document", default="Content")
