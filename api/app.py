@@ -137,7 +137,7 @@ class VisualAidTool:
 # FastAPI Setup
 app = FastAPI()
 
-@app.post("/generate-educational-pdf/")
+@app.post("/generate-pdf/")
 async def generate_educational_pdf(visual_aid_args: VisualAidArgs):
     tool = VisualAidTool()
 
